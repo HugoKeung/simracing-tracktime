@@ -1,0 +1,18 @@
+.box{
+
+    background-color: cyan;
+    flex: 1;
+}
+
+.container{
+    display:flex;
+    flex-direction: row;
+}
+
+h1{
+    text-align:center;
+}
+
+.container{
+    border:violet
+}

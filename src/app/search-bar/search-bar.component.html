@@ -1,0 +1,13 @@
+<form  (ngSubmit)="onSubmit()">
+    <mat-form-field class="searchBar">
+        <mat-label>Search Track</mat-label>
+        <input type="text" [formControl]=searchInput [matAutocomplete]="auto" matInput placeholder="search for your track here">
+    </mat-form-field>
+    
+    <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+        {{option}}
+        <app-autocomplete-dropdown [name] = option></app-autocomplete-dropdown>
+        </mat-option>
+    </mat-autocomplete>
+</form>

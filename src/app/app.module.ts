@@ -1,10 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { TracksPageComponent } from './tracks-page/tracks-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SubmitFormComponent } from './submit-form/submit-form.component';
 import { FilterFormComponent } from './filter-form/filter-form.component';
@@ -16,12 +17,20 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ProfileTableComponent } from './profile-table/profile-table.component';
-
+import { TrackPageComponent } from './track-page/track-page.component';
+import { CarPageComponent } from './car-page/car-page.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AutocompleteDropdownComponent } from './autocomplete-dropdown/autocomplete-dropdown.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import {MatTableModule} from '@angular/material/table'; 
+import {MatSortModule} from '@angular/material/sort'; 
+import {MatInputModule} from '@angular/material/input'; 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
-    TracksPageComponent,
+
     HomePageComponent,
     SubmitFormComponent,
     FilterFormComponent,
@@ -32,11 +41,23 @@ import { ProfileTableComponent } from './profile-table/profile-table.component';
     ErrorPageComponent,
     LoginPageComponent,
     ProfilePageComponent,
-    ProfileTableComponent
+    ProfileTableComponent,
+    TrackPageComponent,
+    CarPageComponent,
+    SearchBarComponent,
+    AutocompleteDropdownComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatAutocompleteModule,
+    FormsModule,
+    MatDialogModule,
+    MatTableModule,
+    MatSortModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

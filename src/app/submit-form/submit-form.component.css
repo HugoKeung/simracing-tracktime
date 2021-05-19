@@ -1,0 +1,33 @@
+.formWrap{
+    background-color: brown;
+    color:white;
+    max-width: 600px;
+    margin:auto;
+    padding: 10px;
+}
+
+label{
+    padding:5px;
+    margin-top: 20px;
+    display: block;
+}
+
+input{
+    display:block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.formWrap h2{
+    text-align: center;
+    
+}
+
+button{
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+
+}

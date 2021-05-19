@@ -1,1 +1,54 @@
-<p>submit-form works!</p>
+
+
+<form [formGroup]="submitForm" (ngSubmit)="onSubmit()" class="formWrap">
+  <h2>Submit your time</h2>
+    <label>
+        Lap Time:
+      </label>
+      <input type="text" formControlName="laptime">
+  
+      <label>
+        Sector 1 Time:
+      </label>
+      <input type="text" formControlName="s1time">
+      <label>
+        Sector 2 Time:
+      </label>
+      <input type="text" formControlName="s2time">
+      <label>
+        Sector 3 Time:
+      
+      </label>
+      <input type="text" formControlName="s3time">
+      <label>
+        Car Model:
+      
+      </label>
+      <input type="text" formControlName="car">
+      <label>
+        Onboard Video Link:
+    
+      </label>
+      <input type="text" formControlName="video">
+      <label>
+        Sim Name:
+        
+      </label>
+      <input type="text" formControlName="game">
+      <label>
+        Telemetry File:
+        
+      </label>
+      <input type="text" formControlName="telemetry">
+      <label>
+        Setup File:
+        
+      </label>
+      <input type="text" formControlName="setup">
+      <label>
+        Additional Notes:
+        
+      </label>
+      <input type="text" formControlName="note">               
+      <button type="submit" [disabled]="!submitForm.valid">Submit</button>
+</form>

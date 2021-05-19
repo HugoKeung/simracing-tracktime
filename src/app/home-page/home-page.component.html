@@ -1,1 +1,16 @@
-<p>home-page works!</p>
+
+<h1>Track of the day</h1>
+<app-track-present [track]="track"></app-track-present>
+<div class="container">
+    <div class="box">
+        <app-popular-table [dataSource] = popTracks [title]=popTracksTableName></app-popular-table>
+    </div>
+    <div class="box">
+        <app-popular-table [dataSource] = popCars [title]=popCarsTableName></app-popular-table>
+    </div>
+    <div class="box">
+        <app-popular-table [dataSource] = popCombos [title]=popCombosTableName></app-popular-table>
+    </div>
+</div>
+
+

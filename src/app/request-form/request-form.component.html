@@ -1,1 +1,14 @@
 <p>request-form works!</p>
+
+<form [formGroup]="requestForm" (ngSubmit)="onSubmit()" class="container">
+    <div class="item">
+        <input type="radio" name="type" id="track" value="track" formControlName="type">
+        <label for="track">Track</label>
+        <input type="radio" name="type" id="car" value="car" formControlName="type">
+        <label for="car">Car</label>
+    </div>
+    <div class="item">
+        <input type='text' formControlName="name">
+        <button type="submit" [disabled]="!requestForm.valid">Submit</button>
+    </div>
+</form>

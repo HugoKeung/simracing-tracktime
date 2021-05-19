@@ -1,0 +1,32 @@
+#nav-bar {
+    list-style: none;
+    margin: 0;
+    display:flex;
+    top:0;
+    background: #4c6ca0;
+    overflow: auto;
+
+}
+
+li{
+    flex:1;
+    padding: 10px;
+    
+}
+li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+li:hover{
+    background-color:#446190;
+}
+
+.toRight {
+    float: right;
+}
+
+.searchBar{
+    margin:auto;
+    width: 50%;
+    text-align: center;
+}

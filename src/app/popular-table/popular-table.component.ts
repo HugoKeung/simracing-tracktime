@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { PopularTableDisplay } from '../popular-table-display';
 
 @Component({
   selector: 'app-popular-table',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./popular-table.component.css']
 })
 export class PopularTableComponent implements OnInit {
+  @Input() dataSource:PopularTableDisplay;
+  @Input() title:string;
+  columnsToDisplay:string[] = ['name','count']
 
-  constructor() { }
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
+
   }
 
 }
